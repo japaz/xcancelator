@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D3A3975B2E06B7F300A26024 /* Xcancelator Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D3A3975A2E06B7F300A26024 /* Xcancelator Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D3B92AF62E06C8F60056FE98 /* Xcancelator Extension iOS.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D3CA931F2E06C2F900595769 /* Xcancelator Extension iOS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,48 @@
 			remoteGlobalIDString = D3A397592E06B7F300A26024;
 			remoteInfo = "Xcancelator Extension";
 		};
+		D3B92AD22E06C8BC0056FE98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3A397202E06B7F200A26024 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3B92AC42E06C8BB0056FE98;
+			remoteInfo = "Xcancelator iOS";
+		};
+		D3B92ADC2E06C8BC0056FE98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3A397202E06B7F200A26024 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3B92AC42E06C8BB0056FE98;
+			remoteInfo = "Xcancelator iOS";
+		};
+		D3B92AF72E06C8F60056FE98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3A397202E06B7F200A26024 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3CA931E2E06C2F900595769;
+			remoteInfo = "Xcancelator Extension iOS";
+		};
+		D3B92AFA2E06C9150056FE98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3A397202E06B7F200A26024 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3CA931E2E06C2F900595769;
+			remoteInfo = "Xcancelator Extension iOS";
+		};
+		D3B92AFC2E06C9700056FE98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3A397202E06B7F200A26024 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3CA931E2E06C2F900595769;
+			remoteInfo = "Xcancelator Extension iOS";
+		};
+		D3B92AFE2E06C9CA0056FE98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3A397202E06B7F200A26024 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3CA931E2E06C2F900595769;
+			remoteInfo = "Xcancelator Extension iOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +89,17 @@
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D3B92AF92E06C8F60056FE98 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D3B92AF62E06C8F60056FE98 /* Xcancelator Extension iOS.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +107,10 @@
 		D3A397442E06B7F300A26024 /* XcancelatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcancelatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A3974E2E06B7F300A26024 /* XcancelatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcancelatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A3975A2E06B7F300A26024 /* Xcancelator Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Xcancelator Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3B92AC52E06C8BB0056FE98 /* Xcancelator iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Xcancelator iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3B92AD12E06C8BC0056FE98 /* Xcancelator iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Xcancelator iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3B92ADB2E06C8BC0056FE98 /* Xcancelator iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Xcancelator iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3CA931F2E06C2F900595769 /* Xcancelator Extension iOS.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Xcancelator Extension iOS.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -62,6 +120,31 @@
 				Info.plist,
 			);
 			target = D3A397592E06B7F300A26024 /* Xcancelator Extension */;
+		};
+		D3B92B002E06CA9D0056FE98 /* Exceptions for "Xcancelator iOS" folder in "Xcancelator iOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D3B92AC42E06C8BB0056FE98 /* Xcancelator iOS */;
+		};
+		D3CA93372E06C2FA00595769 /* Exceptions for "Xcancelator Extension iOS" folder in "Xcancelator Extension iOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D3CA931E2E06C2F900595769 /* Xcancelator Extension iOS */;
+		};
+		D3CA933A2E06C40400595769 /* Exceptions for "Xcancelator Extension" folder in "Xcancelator Extension iOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/_locales,
+				Resources/content.js,
+				Resources/images,
+				Resources/manifest.json,
+				Resources/popup.html,
+			);
+			target = D3CA931E2E06C2F900595769 /* Xcancelator Extension iOS */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -85,12 +168,39 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				D3A397742E06B7F300A26024 /* Exceptions for "Xcancelator Extension" folder in "Xcancelator Extension" target */,
+				D3CA933A2E06C40400595769 /* Exceptions for "Xcancelator Extension" folder in "Xcancelator Extension iOS" target */,
 			);
 			explicitFolders = (
 				Resources/_locales,
 				Resources/images,
 			);
 			path = "Xcancelator Extension";
+			sourceTree = "<group>";
+		};
+		D3B92AC62E06C8BB0056FE98 /* Xcancelator iOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D3B92B002E06CA9D0056FE98 /* Exceptions for "Xcancelator iOS" folder in "Xcancelator iOS" target */,
+			);
+			path = "Xcancelator iOS";
+			sourceTree = "<group>";
+		};
+		D3B92AD42E06C8BC0056FE98 /* Xcancelator iOSTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Xcancelator iOSTests";
+			sourceTree = "<group>";
+		};
+		D3B92ADE2E06C8BC0056FE98 /* Xcancelator iOSUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Xcancelator iOSUITests";
+			sourceTree = "<group>";
+		};
+		D3CA93202E06C2F900595769 /* Xcancelator Extension iOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D3CA93372E06C2FA00595769 /* Exceptions for "Xcancelator Extension iOS" folder in "Xcancelator Extension iOS" target */,
+			);
+			path = "Xcancelator Extension iOS";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -124,6 +234,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D3B92AC22E06C8BB0056FE98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3B92ACE2E06C8BC0056FE98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3B92AD82E06C8BC0056FE98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3CA931C2E06C2F900595769 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -134,6 +272,11 @@
 				D3A397472E06B7F300A26024 /* XcancelatorTests */,
 				D3A397512E06B7F300A26024 /* XcancelatorUITests */,
 				D3A3975E2E06B7F300A26024 /* Xcancelator Extension */,
+				D3CA93202E06C2F900595769 /* Xcancelator Extension iOS */,
+				D3B92AC62E06C8BB0056FE98 /* Xcancelator iOS */,
+				D3B92AD42E06C8BC0056FE98 /* Xcancelator iOSTests */,
+				D3B92ADE2E06C8BC0056FE98 /* Xcancelator iOSUITests */,
+				D3B92AF52E06C8F60056FE98 /* Frameworks */,
 				D3A397292E06B7F200A26024 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -145,8 +288,19 @@
 				D3A397442E06B7F300A26024 /* XcancelatorTests.xctest */,
 				D3A3974E2E06B7F300A26024 /* XcancelatorUITests.xctest */,
 				D3A3975A2E06B7F300A26024 /* Xcancelator Extension.appex */,
+				D3CA931F2E06C2F900595769 /* Xcancelator Extension iOS.appex */,
+				D3B92AC52E06C8BB0056FE98 /* Xcancelator iOS.app */,
+				D3B92AD12E06C8BC0056FE98 /* Xcancelator iOSTests.xctest */,
+				D3B92ADB2E06C8BC0056FE98 /* Xcancelator iOSUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D3B92AF52E06C8F60056FE98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +398,101 @@
 			productReference = D3A3975A2E06B7F300A26024 /* Xcancelator Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		D3B92AC42E06C8BB0056FE98 /* Xcancelator iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3B92AE92E06C8BC0056FE98 /* Build configuration list for PBXNativeTarget "Xcancelator iOS" */;
+			buildPhases = (
+				D3B92AC12E06C8BB0056FE98 /* Sources */,
+				D3B92AC22E06C8BB0056FE98 /* Frameworks */,
+				D3B92AC32E06C8BB0056FE98 /* Resources */,
+				D3B92AF92E06C8F60056FE98 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3B92AF82E06C8F60056FE98 /* PBXTargetDependency */,
+				D3B92AFB2E06C9150056FE98 /* PBXTargetDependency */,
+				D3B92AFD2E06C9700056FE98 /* PBXTargetDependency */,
+				D3B92AFF2E06C9CA0056FE98 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D3B92AC62E06C8BB0056FE98 /* Xcancelator iOS */,
+			);
+			name = "Xcancelator iOS";
+			packageProductDependencies = (
+			);
+			productName = "Xcancelator iOS";
+			productReference = D3B92AC52E06C8BB0056FE98 /* Xcancelator iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D3B92AD02E06C8BC0056FE98 /* Xcancelator iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3B92AEA2E06C8BC0056FE98 /* Build configuration list for PBXNativeTarget "Xcancelator iOSTests" */;
+			buildPhases = (
+				D3B92ACD2E06C8BC0056FE98 /* Sources */,
+				D3B92ACE2E06C8BC0056FE98 /* Frameworks */,
+				D3B92ACF2E06C8BC0056FE98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3B92AD32E06C8BC0056FE98 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D3B92AD42E06C8BC0056FE98 /* Xcancelator iOSTests */,
+			);
+			name = "Xcancelator iOSTests";
+			packageProductDependencies = (
+			);
+			productName = "Xcancelator iOSTests";
+			productReference = D3B92AD12E06C8BC0056FE98 /* Xcancelator iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D3B92ADA2E06C8BC0056FE98 /* Xcancelator iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3B92AEB2E06C8BC0056FE98 /* Build configuration list for PBXNativeTarget "Xcancelator iOSUITests" */;
+			buildPhases = (
+				D3B92AD72E06C8BC0056FE98 /* Sources */,
+				D3B92AD82E06C8BC0056FE98 /* Frameworks */,
+				D3B92AD92E06C8BC0056FE98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3B92ADD2E06C8BC0056FE98 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D3B92ADE2E06C8BC0056FE98 /* Xcancelator iOSUITests */,
+			);
+			name = "Xcancelator iOSUITests";
+			packageProductDependencies = (
+			);
+			productName = "Xcancelator iOSUITests";
+			productReference = D3B92ADB2E06C8BC0056FE98 /* Xcancelator iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D3CA931E2E06C2F900595769 /* Xcancelator Extension iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3CA93382E06C2FA00595769 /* Build configuration list for PBXNativeTarget "Xcancelator Extension iOS" */;
+			buildPhases = (
+				D3CA931B2E06C2F900595769 /* Sources */,
+				D3CA931C2E06C2F900595769 /* Frameworks */,
+				D3CA931D2E06C2F900595769 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D3CA93202E06C2F900595769 /* Xcancelator Extension iOS */,
+			);
+			name = "Xcancelator Extension iOS";
+			packageProductDependencies = (
+			);
+			productName = "Xcancelator Extension iOS";
+			productReference = D3CA931F2E06C2F900595769 /* Xcancelator Extension iOS.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -268,6 +517,20 @@
 					D3A397592E06B7F300A26024 = {
 						CreatedOnToolsVersion = 16.4;
 					};
+					D3B92AC42E06C8BB0056FE98 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					D3B92AD02E06C8BC0056FE98 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = D3B92AC42E06C8BB0056FE98;
+					};
+					D3B92ADA2E06C8BC0056FE98 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = D3B92AC42E06C8BB0056FE98;
+					};
+					D3CA931E2E06C2F900595769 = {
+						CreatedOnToolsVersion = 16.4;
+					};
 				};
 			};
 			buildConfigurationList = D3A397232E06B7F200A26024 /* Build configuration list for PBXProject "Xcancelator" */;
@@ -288,6 +551,10 @@
 				D3A397432E06B7F300A26024 /* XcancelatorTests */,
 				D3A3974D2E06B7F300A26024 /* XcancelatorUITests */,
 				D3A397592E06B7F300A26024 /* Xcancelator Extension */,
+				D3CA931E2E06C2F900595769 /* Xcancelator Extension iOS */,
+				D3B92AC42E06C8BB0056FE98 /* Xcancelator iOS */,
+				D3B92AD02E06C8BC0056FE98 /* Xcancelator iOSTests */,
+				D3B92ADA2E06C8BC0056FE98 /* Xcancelator iOSUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -315,6 +582,34 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D3A397582E06B7F300A26024 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3B92AC32E06C8BB0056FE98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3B92ACF2E06C8BC0056FE98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3B92AD92E06C8BC0056FE98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3CA931D2E06C2F900595769 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -352,6 +647,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D3B92AC12E06C8BB0056FE98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3B92ACD2E06C8BC0056FE98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3B92AD72E06C8BC0056FE98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3CA931B2E06C2F900595769 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -369,6 +692,36 @@
 			isa = PBXTargetDependency;
 			target = D3A397592E06B7F300A26024 /* Xcancelator Extension */;
 			targetProxy = D3A3975C2E06B7F300A26024 /* PBXContainerItemProxy */;
+		};
+		D3B92AD32E06C8BC0056FE98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3B92AC42E06C8BB0056FE98 /* Xcancelator iOS */;
+			targetProxy = D3B92AD22E06C8BC0056FE98 /* PBXContainerItemProxy */;
+		};
+		D3B92ADD2E06C8BC0056FE98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3B92AC42E06C8BB0056FE98 /* Xcancelator iOS */;
+			targetProxy = D3B92ADC2E06C8BC0056FE98 /* PBXContainerItemProxy */;
+		};
+		D3B92AF82E06C8F60056FE98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3CA931E2E06C2F900595769 /* Xcancelator Extension iOS */;
+			targetProxy = D3B92AF72E06C8F60056FE98 /* PBXContainerItemProxy */;
+		};
+		D3B92AFB2E06C9150056FE98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3CA931E2E06C2F900595769 /* Xcancelator Extension iOS */;
+			targetProxy = D3B92AFA2E06C9150056FE98 /* PBXContainerItemProxy */;
+		};
+		D3B92AFD2E06C9700056FE98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3CA931E2E06C2F900595769 /* Xcancelator Extension iOS */;
+			targetProxy = D3B92AFC2E06C9700056FE98 /* PBXContainerItemProxy */;
+		};
+		D3B92AFF2E06C9CA0056FE98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3CA931E2E06C2F900595769 /* Xcancelator Extension iOS */;
+			targetProxy = D3B92AFE2E06C9CA0056FE98 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -390,7 +743,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -421,7 +774,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -695,6 +1048,211 @@
 			};
 			name = Release;
 		};
+		D3B92AE32E06C8BC0056FE98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R29WN6MCN4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.albertopaz.Xcancelator-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3B92AE42E06C8BC0056FE98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R29WN6MCN4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.albertopaz.Xcancelator-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3B92AE52E06C8BC0056FE98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R29WN6MCN4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.albertopaz.Xcancelator-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Xcancelator iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Xcancelator iOS";
+			};
+			name = Debug;
+		};
+		D3B92AE62E06C8BC0056FE98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R29WN6MCN4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.albertopaz.Xcancelator-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Xcancelator iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Xcancelator iOS";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3B92AE72E06C8BC0056FE98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R29WN6MCN4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.albertopaz.Xcancelator-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Xcancelator iOS";
+			};
+			name = Debug;
+		};
+		D3B92AE82E06C8BC0056FE98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R29WN6MCN4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.albertopaz.Xcancelator-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Xcancelator iOS";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3CA93352E06C2F900595769 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Xcancelator Extension iOS/Xcancelator_Extension_iOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R29WN6MCN4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Xcancelator Extension iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Xcancelator Extension iOS";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.albertopaz.Xcancelator-iOS.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3CA93362E06C2F900595769 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R29WN6MCN4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Xcancelator Extension iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Xcancelator Extension iOS";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.albertopaz.Xcancelator-Extension-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -739,6 +1297,42 @@
 			buildConfigurations = (
 				D3A397822E06B7F300A26024 /* Debug */,
 				D3A397832E06B7F300A26024 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3B92AE92E06C8BC0056FE98 /* Build configuration list for PBXNativeTarget "Xcancelator iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3B92AE32E06C8BC0056FE98 /* Debug */,
+				D3B92AE42E06C8BC0056FE98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3B92AEA2E06C8BC0056FE98 /* Build configuration list for PBXNativeTarget "Xcancelator iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3B92AE52E06C8BC0056FE98 /* Debug */,
+				D3B92AE62E06C8BC0056FE98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3B92AEB2E06C8BC0056FE98 /* Build configuration list for PBXNativeTarget "Xcancelator iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3B92AE72E06C8BC0056FE98 /* Debug */,
+				D3B92AE82E06C8BC0056FE98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3CA93382E06C2FA00595769 /* Build configuration list for PBXNativeTarget "Xcancelator Extension iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3CA93352E06C2F900595769 /* Debug */,
+				D3CA93362E06C2F900595769 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

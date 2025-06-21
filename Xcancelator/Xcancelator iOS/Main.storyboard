@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Xcancelator_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X Cancelator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycE-eQ-1Ps">
+                                <rect key="frame" x="20" y="68" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status: Not enabled" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMQ-EP-3g3">
+                                <rect key="frame" x="20" y="124" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iV-6g-bM0">
+                                <rect key="frame" x="60" y="433" width="294" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="j2d-Tf-1ak"/>
+                                </constraints>
+                                <state key="normal" title="Enable Extension in Safari"/>
+                                <connections>
+                                    <action selector="openExtensionSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2PT-Tn-Sas"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgK-dE-bgQ">
+                                <rect key="frame" x="30" y="175" width="354" height="238"/>
+                                <string key="text">Instructions:
+
+1. Tap the "Enable Extension in Safari" button below
+2. Toggle X Cancelator to ON in the Safari extensions list
+3. Navigate to X.com or Twitter.com in Safari
+4. The extension will automatically redirect to xcancel.com
+
+Once enabled, X Cancelator will work across all your websites without needing to keep this app open.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ycE-eQ-1Ps" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="0qP-QA-NkX"/>
+                            <constraint firstItem="UMQ-EP-3g3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="40B-Yz-uyd"/>
+                            <constraint firstItem="9iV-6g-bM0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="67K-2V-AlN"/>
+                            <constraint firstItem="UMQ-EP-3g3" firstAttribute="top" secondItem="ycE-eQ-1Ps" secondAttribute="bottom" constant="20" id="6nM-DN-BBo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lgK-dE-bgQ" secondAttribute="trailing" constant="30" id="IIt-Tj-ggG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9iV-6g-bM0" secondAttribute="trailing" constant="60" id="PJM-Bc-2IF"/>
+                            <constraint firstItem="lgK-dE-bgQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="U5T-lX-Wr1"/>
+                            <constraint firstItem="9iV-6g-bM0" firstAttribute="top" secondItem="lgK-dE-bgQ" secondAttribute="bottom" constant="20" id="Xzm-bT-DQb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UMQ-EP-3g3" secondAttribute="trailing" constant="20" id="YnF-37-bnR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ycE-eQ-1Ps" secondAttribute="trailing" constant="20" id="eV0-85-foA"/>
+                            <constraint firstItem="lgK-dE-bgQ" firstAttribute="top" secondItem="UMQ-EP-3g3" secondAttribute="bottom" constant="30" id="fi7-Zv-P7r"/>
+                            <constraint firstItem="ycE-eQ-1Ps" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lyx-f7-Yi5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="enableExtensionButton" destination="9iV-6g-bM0" id="AH6-bO-Wxh"/>
+                        <outlet property="instructionsLabel" destination="lgK-dE-bgQ" id="JBp-ri-pJW"/>
+                        <outlet property="statusLabel" destination="UMQ-EP-3g3" id="CWc-S3-a4Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
