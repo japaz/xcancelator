@@ -4,7 +4,11 @@ This extension redirects X.com and Twitter.com URLs to xcancel.com using modern 
 
 **Requirements**: Latest versions of Safari (15.4+), Chrome, Firefox, or Edge
 
-## Safari Installation
+## Development Installation
+
+For development and testing, use the root-level extension files (`manifest.json`, `content-script.js`, `popup.html`):
+
+### Safari Development Installation
 
 1. **Enable Developer Mode**:
    - Open Safari
@@ -18,13 +22,22 @@ This extension redirects X.com and Twitter.com URLs to xcancel.com using modern 
 3. **Load the Extension**:
    - Go to Safari → Settings → Extensions
    - Click the "+" button in the bottom left
-   - Navigate to and select the `xcancelator` folder
+   - Navigate to and select the `xcancelator` folder (root directory)
 
 4. **Enable the Extension**:
    - Check the box next to "X Cancelator" in the Extensions list
    - The extension should now be active
 
-## Chrome Installation
+### iOS Safari Development Installation
+
+**Note**: iOS Safari extensions cannot be installed directly. They must be delivered through an iOS app:
+
+1. **Add iOS targets** to the Xcode project (see Safari App Store Submission section)
+2. **Build and install** the iOS app on your device through Xcode
+3. **Enable the extension** in iOS Settings → Safari → Extensions
+4. **The extension will work** in Safari on iOS using the same code via symbolic links
+
+### Chrome Development Installation
 
 1. **Enable Developer Mode**:
    - Open Chrome and go to `chrome://extensions/`
@@ -32,10 +45,10 @@ This extension redirects X.com and Twitter.com URLs to xcancel.com using modern 
 
 2. **Load the Extension**:
    - Click "Load unpacked"
-   - Navigate to and select the `xcancelator` folder
+   - Navigate to and select the `xcancelator` folder (root directory)
    - The extension should appear in your extensions list
 
-## Firefox Installation
+### Firefox Development Installation
 
 1. **Load Temporary Extension**:
    - Open Firefox and go to `about:debugging`
@@ -43,7 +56,7 @@ This extension redirects X.com and Twitter.com URLs to xcancel.com using modern 
    - Click "Load Temporary Add-on"
    - Navigate to the `xcancelator` folder and select `manifest.json`
 
-## Edge Installation
+### Edge Development Installation
 
 1. **Enable Developer Mode**:
    - Open Edge and go to `edge://extensions/`
@@ -51,29 +64,88 @@ This extension redirects X.com and Twitter.com URLs to xcancel.com using modern 
 
 2. **Load the Extension**:
    - Click "Load unpacked"
+   - Navigate to and select the `xcancelator` folder (root directory)
+   - The extension should appear in your extensions list
+   - Click "Load unpacked"
    - Navigate to and select the `xcancelator` folder
    - The extension should appear in your extensions list
 
-## App Store Distribution (For public release)
+## App Store Distribution
 
-To distribute this extension publicly, you'll need to:
+### Safari App Store Submission
 
-1. **Safari App Store**:
+The Xcode project is now created and ready for App Store submission:
 
+**Note**: The Xcode project uses relative symbolic links to share extension files with the root directory. This ensures the same code is used for development and production builds.
+
+#### macOS Safari Extension
+
+1. **Configure Bundle Identifiers**:
+   - Open `Xcancelator.xcodeproj` in Xcode
+   - Set unique bundle identifiers:
+     - Main App: `com.yourname.xcancelator`
+     - Extension: `com.yourname.xcancelator.Extension`
+
+#### iOS Safari Extension Support
+
+**Answer: Add "iOS Safari Extension" target (NOT "iOS Safari Extension App")**
+
+To support Safari on iOS, add iOS targets to your existing Xcode project:
+
+1. **Add iOS App Target**:
+   - In Xcode, go to File → New → Target
+   - Select "iOS" → "App" 
+   - Choose "Storyboard" interface
+   - Use bundle ID: `com.yourname.xcancelator.ios`
+
+2. **Add iOS Safari Extension Target**:
+   - File → New → Target
+   - Select "iOS" → "Safari Extension" (NOT "Safari Extension App")
+   - Link to same Resources folder via symbolic links
+   - Use bundle ID: `com.yourname.xcancelator.ios.Extension`
+
+3. **Result**: Universal app (macOS + iOS) sharing the same extension code
+
+#### Build and Submit
+
+2. **Add App Icons**:
+   - See `ICONS.md` for required icon sizes
+   - Add icons to the app target in Xcode
+
+3. **Configure App Store Metadata**:
+   - Set app category: Productivity
+   - Add app description and keywords
+   - Prepare screenshots
+
+4. **Build and Submit**:
    ```bash
-   # Open Xcode and create a new project
-   # Choose "macOS" → "Safari Extension App"
+   # In Xcode:
+   # 1. Product → Archive
+   # 2. Window → Organizer
+   # 3. Distribute App → App Store Connect
+   # 4. Upload to App Store Connect
    ```
 
-   - Copy `manifest.json`, `content-script.js`, and `popup.html` to the Safari Extension folder
-   - Set a unique bundle identifier (e.g., `com.yourname.xcancelator`)
-   - Build and submit to the Mac App Store
+5. **App Store Connect**:
+   - Complete app metadata
+   - Add screenshots and descriptions
+   - Submit for review
 
-2. **Chrome Web Store**: Submit the extension folder directly
+### Other Browser Stores
 
-3. **Firefox Add-ons**: Submit the extension folder directly
+For other browsers, use the root-level extension files:
 
-4. **Edge Add-ons**: Submit the extension folder directly
+2. **Chrome Web Store**: 
+   - Package: `manifest.json`, `content-script.js`, `popup.html`
+   - Submit at: https://chrome.google.com/webstore/devconsole/
+
+3. **Firefox Add-ons**: 
+   - Package: `manifest.json`, `content-script.js`, `popup.html`
+   - Submit at: https://addons.mozilla.org/developers/
+
+4. **Edge Add-ons**: 
+   - Package: `manifest.json`, `content-script.js`, `popup.html`
+   - Submit at: https://partner.microsoft.com/dashboard/microsoftedge/
 
 ## Testing the Extension
 

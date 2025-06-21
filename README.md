@@ -1,6 +1,26 @@
 # X Cancelator - Cross-Browser Extension
 
-A modern cross-browser extension that automatically redirects X.com and Twitter.com URLs to xcancel.com, with intelligent filtering to avoid unnecessary redirects.
+A modern cross-browser extensio```shell
+xcancelator/
+├── content-script.js                 # Extension logic (dev/testing + linked to Xcode)
+├── manifest.json                     # Extension manifest (dev/testing)
+├── popup.html                       # Extension popup (dev/testing + linked to Xcode)
+├── test.js                         # Test script
+├── INSTALL.md                      # Installation & distribution guide
+├── README.md                       # This file
+├── ICONS.md                        # Icon guidelines
+├── package.json                    # Project metadata
+└── Xcancelator/                    # Xcode project (Safari App Store)
+    ├── Xcancelator.xcodeproj/      # Xcode project file
+    ├── Xcancelator/                # Main macOS app
+    ├── Xcancelator Extension/      # Safari Extension
+    │   └── Resources/
+    │       ├── content.js          # → relative symlink to ../../../content-script.js
+    │       ├── manifest.json       # Safari-specific manifest
+    │       └── popup.html          # → relative symlink to ../../../popup.html
+    ├── XcancelatorTests/           # Unit tests
+    └── XcancelatorUITests/         # UI tests
+```lly redirects X.com and Twitter.com URLs to xcancel.com, with intelligent filtering to avoid unnecessary redirects.
 
 ## Features
 
@@ -60,25 +80,35 @@ For detailed instructions, see `INSTALL.md`.
 
 ### For Distribution
 
-Submit the extension folder to the respective browser stores:
+The project is ready for distribution:
 
-- **Safari**: Mac App Store (requires Xcode project wrapper)
-- **Chrome**: Chrome Web Store
-- **Firefox**: Firefox Add-ons
-- **Edge**: Microsoft Edge Add-ons
+- **Safari**: Xcode project created - ready for App Store submission
+  - **macOS Safari**: Ready for Mac App Store
+  - **iOS Safari**: Add iOS targets to existing Xcode project (see INSTALL.md)
+- **Chrome**: Use root-level extension files for Chrome Web Store
+- **Firefox**: Use root-level extension files for Firefox Add-ons
+- **Edge**: Use root-level extension files for Microsoft Edge Add-ons
+
+For detailed submission instructions, see `INSTALL.md`.
 
 ## Files Structure
 
 ```shell
 xcancelator/
-├── manifest.json         # Manifest V3 for all modern browsers
-├── content-script.js     # Universal extension logic
-├── popup.html           # Extension popup interface
-├── test.js              # Test script (all tests passing ✅)
-├── INSTALL.md           # Installation instructions
-├── README.md            # This file
-├── ICONS.md             # Icon guidelines
-└── package.json         # Project metadata
+├── manifest.json                     # Extension manifest (for dev/testing)
+├── content-script.js                 # Extension logic (for dev/testing)
+├── popup.html                       # Extension popup (for dev/testing)
+├── test.js                         # Test script
+├── INSTALL.md                      # Installation & distribution guide
+├── README.md                       # This file
+├── ICONS.md                        # Icon guidelines
+├── package.json                    # Project metadata
+└── Xcancelator/                    # Xcode project (Safari App Store)
+    ├── Xcancelator.xcodeproj/      # Xcode project file
+    ├── Xcancelator/                # Main macOS app
+    ├── Xcancelator Extension/      # Safari Extension
+    ├── XcancelatorTests/           # Unit tests
+    └── XcancelatorUITests/         # UI tests
 ```
 
 ## Browser Compatibility
@@ -86,6 +116,8 @@ xcancelator/
 **Supported Browsers (Latest Versions)**
 
 - **Safari 15.4+**: Full Manifest V3 support ✅
+  - **macOS**: Available through Mac App Store
+  - **iOS**: Requires iOS app with Safari Extension (see INSTALL.md)
 - **Chrome 88+**: Full Manifest V3 support ✅  
 - **Firefox 109+**: Full Manifest V3 support ✅
 - **Edge 88+**: Full Manifest V3 support ✅
