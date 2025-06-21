@@ -1,0 +1,24 @@
+{
+  "name": "x-cancelator",
+  "version": "1.0.0",
+  "description": "Safari extension that redirects X.com and Twitter.com URLs to xcancel.com",
+  "main": "background.js",
+  "scripts": {
+    "build": "echo 'Use Xcode to build the Safari extension'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "safari",
+    "extension",
+    "redirect",
+    "x.com",
+    "twitter.com",
+    "xcancel.com"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "safari": {
+    "bundle_identifier": "com.yourname.xcancelator",
+    "minimum_version": "14.0"
+  }
+}

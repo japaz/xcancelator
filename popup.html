@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Cancelator Settings</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 400px;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f7;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            color: #1d1d1f;
+            font-size: 24px;
+            margin: 0;
+        }
+        .header p {
+            color: #6e6e73;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        .status {
+            background: white;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .status.active {
+            border-left: 4px solid #34c759;
+        }
+        .status-text {
+            font-weight: 600;
+            color: #34c759;
+            margin-bottom: 8px;
+        }
+        .info {
+            background: white;
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .info h3 {
+            margin: 0 0 8px 0;
+            color: #1d1d1f;
+            font-size: 16px;
+        }
+        .info ul {
+            margin: 0;
+            padding-left: 16px;
+            color: #6e6e73;
+            font-size: 14px;
+        }
+        .info li {
+            margin-bottom: 4px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #6e6e73;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>X Cancelator</h1>
+        <p>Redirects X.com/Twitter.com to xcancel.com</p>
+    </div>
+    
+    <div class="status active">
+        <div class="status-text">✅ Extension Active</div>
+        <div style="font-size: 14px; color: #6e6e73;">
+            Monitoring X.com and Twitter.com URLs
+        </div>
+    </div>
+    
+    <div class="info">
+        <h3>How it works:</h3>
+        <ul>
+            <li>Redirects X.com and Twitter.com URLs to xcancel.com</li>
+            <li>Preserves the path, query parameters, and hash</li>
+            <li>Skips redirect for root domains (x.com, twitter.com)</li>
+            <li>Skips redirect when navigating within the same domain</li>
+        </ul>
+    </div>
+    
+    <div class="footer">
+        Version 1.0 • Open Source
+    </div>
+</body>
+</html>
